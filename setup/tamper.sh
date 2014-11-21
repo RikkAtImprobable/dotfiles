@@ -6,7 +6,13 @@
 # Append accordingly if it's not been tampered with
 
 if ! grep -q "# tampered with by .dotfiles" ~/.bashrc ; then
-    printf "\nsource ~/.dotfiles/bashrc/* # tampered with by .dotfiles" >> ~/.bashrc
+    printf "\n# tampered with by .dotfiles\n\
+for f in ~/.dotfiles/bashrc/*; do source \$f; done" >> ~/.bashrc
 fi
 
-# TODO link dotfiles in ~/
+# link .dotfiles/dot/* in ~/
+
+for f in ~/.dotfiles/dot/*
+do
+    ln -s $f "$HOME/.$(basename $f)"
+done

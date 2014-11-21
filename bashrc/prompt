@@ -1,3 +1,5 @@
+#!/bin/bash
+#
 # The contents of this file govern the bash prompt
 # One day this will do clever things in different contexts
 # For now it mostly just makes git look pretty
