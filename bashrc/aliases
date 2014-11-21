@@ -1,0 +1,10 @@
+# Aliases
+# A big pile of aliases, which I might one day organise
+
+# Display everything below pwd as a tree
+
+alias lstree="find . -type d | sed -e 1d -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|-/'"
+
+# Get external IP address
+
+alias ipext='curl -s http://checkip.dyndns.org/ | grep -o '[0-9][0-9]*.[0-9][0-9]*.[0-9][0-9]*.[0-9]*''
