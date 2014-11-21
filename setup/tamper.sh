@@ -6,7 +6,7 @@
 # Append accordingly if it's not been tampered with
 
 if ! grep -q "# tampered with by .dotfiles" ~/.bashrc ; then
-    echo "source ~/.dotfiles/bashrc/* # tampered with by .dotfiles" >> ~/.bashrc
+    printf "\nsource ~/.dotfiles/bashrc/* # tampered with by .dotfiles" >> ~/.bashrc
 fi
 
 # TODO link dotfiles in ~/
