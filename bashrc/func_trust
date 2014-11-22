@@ -1,0 +1,11 @@
+# func_trust
+# 
+
+trust() {
+
+    if [[ $# -eq 0 ]] ; then
+        echo 'USAGE: `trust foo` adds `ForwardAgent yes` for host foo in ssh config'
+        return 0
+    fi
+    printf '\n\nHost %s\n    ForwardAgent yes\n' $1 >> ~/.ssh/config
+}

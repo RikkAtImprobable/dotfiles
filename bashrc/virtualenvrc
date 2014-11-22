@@ -1,8 +1,12 @@
 # virtualenv
+
+
 # required for virtualenvwrapper
 
-if type [ virtualenvwrapper >/dev/null 2>&1 ] ; then
+if type virtualenvwrapper.sh > /dev/null 2>&1 ; then
     export WORKON_HOME=$HOME/.virtualenvs
     export PROJECT_HOME=$HOME/Devel
     source /usr/local/bin/virtualenvwrapper.sh
+else
+    echo "virtualenvwrapper isn't installed! Boo! Boooo!"
 fi
