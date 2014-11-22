@@ -1,6 +1,8 @@
 # virtualenv
 # required for virtualenvwrapper
 
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-source /usr/local/bin/virtualenvwrapper.sh
+if type [ virtualenvwrapper >/dev/null 2>&1 ] ; then
+    export WORKON_HOME=$HOME/.virtualenvs
+    export PROJECT_HOME=$HOME/Devel
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
