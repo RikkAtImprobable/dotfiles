@@ -10,5 +10,8 @@ alias ipext='curl -s http://checkip.dyndns.org/ | grep -o '[0-9][0-9]*.[0-9][0-9
 # Make parent directories on mkdir
 alias mkdir="mkdir -pv"
 
-# make executable
+# Make executable
 alias ax="chmod a+x"
+
+# New terminal
+alias nt="gnome-terminal"
