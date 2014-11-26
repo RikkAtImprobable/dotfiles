@@ -1,0 +1,11 @@
+# func_md
+# Make directory, including parents, and then cd into that directory
+
+md() {
+    if [[ $# -eq 0 ]] ; then
+        echo 'USAGE: `md blahblah` makes directory blahblah and then cds into it'
+        return 0
+    fi
+    mkdir -p $1 > /dev/null
+    cd $1
+}
