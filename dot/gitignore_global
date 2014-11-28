@@ -1,0 +1,4 @@
+# .gitignore
+
+# Swaps and partial files and whatnot
+*.swp

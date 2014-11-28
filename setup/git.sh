@@ -5,6 +5,10 @@
 git config --global user.name "Rikk Hill"
 git config --global user.email "rikk@unashamedly.co.uk"
 
+# Ignore
+
+git config --global core.excludesfile ~/.dotfiles/dot/gitignore_global
+
 # Pushing
 
 git config --global push.default simple
