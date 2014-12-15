@@ -5,7 +5,7 @@
 
 if type virtualenvwrapper.sh > /dev/null 2>&1 ; then
     export WORKON_HOME=$HOME/.virtualenvs
-    export PROJECT_HOME=$HOME/Devel
+    export PROJECT_HOME=$HOME/Dev/projects
     source /usr/local/bin/virtualenvwrapper.sh
 else
     echo "virtualenvwrapper isn't installed! Boo! Boooo!"
