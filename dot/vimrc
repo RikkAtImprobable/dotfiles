@@ -1,6 +1,7 @@
 " Pathogen
 call pathogen#infect()
 call pathogen#helptags()
+
 " Fix tabs to indent four spaces
 set tabstop=4
 set shiftwidth=4
@@ -9,3 +10,13 @@ set expandtab
 set smartindent
 
 filetype plugin indent on
+
+" Fix Alt key in gnome-terminal
+let c='a'
+while c <= 'z'
+  exec "set <A-".c.">=\e".c
+  exec "imap \e".c." <A-".c.">"
+  let c = nr2char(1+char2nr(c))
+endw
+
+set timeout ttimeoutlen=50
