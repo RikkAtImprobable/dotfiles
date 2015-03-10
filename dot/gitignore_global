@@ -1,7 +1,7 @@
 # .gitignore
 
 # Miscellaneous files I don't want appearing in git
-*fnarble*
+xxxx*
 # Swaps and partial files and whatnot
 *.swp
 
