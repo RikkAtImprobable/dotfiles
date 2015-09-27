@@ -7,3 +7,6 @@ xxxx*
 
 # `.pyc`s
 *.pyc
+
+# sbt stuff
+target/
