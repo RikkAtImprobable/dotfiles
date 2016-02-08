@@ -15,3 +15,6 @@ alias ax="chmod a+x"
 
 # New terminal
 alias nt="gnome-terminal"
+
+# Project folder
+alias pr="cd Dev/project"
