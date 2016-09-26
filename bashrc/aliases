@@ -18,3 +18,8 @@ alias nt="gnome-terminal"
 
 # Project folder
 alias pr="cd Dev/projects"
+
+# Text files
+
+# remove duplicates
+alias rd="awk '!seen[$0]++'"

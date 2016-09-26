@@ -10,3 +10,6 @@ xxxx*
 
 # sbt stuff
 target/
+
+# Stop terrible dotfile things
+.netrwhist
