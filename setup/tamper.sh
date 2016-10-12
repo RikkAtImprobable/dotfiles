@@ -8,11 +8,13 @@
 if ! grep -q "# tampered with by .dotfiles" ~/.bashrc ; then
     printf "\n# tampered with by .dotfiles\n\
 for f in ~/.dotfiles/bashrc/*; do source \$f; done" >> ~/.bashrc
+for f in ~/.dotfiles/all_sh/*; do source \$f; done" >> ~/.bashrc
 fi
 
 if ! grep -q "# tampered with by .dotfiles" ~/.zshrc ; then
     printf "\n# tampered with by .dotfiles\n\
 for f in ~/.dotfiles/zshrc/*; do source \$f; done" >> ~/.zshrc
+for f in ~/.dotfiles/all_sh/*; do source \$f; done" >> ~/.zshrc
 fi
 
 # link .dotfiles/dot/* in ~/
