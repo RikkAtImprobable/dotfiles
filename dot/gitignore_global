@@ -13,3 +13,6 @@ target/
 
 # Stop terrible dotfile things
 .netrwhist
+
+# Bloody macs
+.DS_Store
