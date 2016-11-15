@@ -8,6 +8,8 @@ xxxx*
 # `.pyc`s
 *.pyc
 
+.ipynb_checkpoints/
+
 # sbt stuff
 target/
 
@@ -16,3 +18,7 @@ target/
 
 # Bloody macs
 .DS_Store
+
+# pycharm
+
+.idea

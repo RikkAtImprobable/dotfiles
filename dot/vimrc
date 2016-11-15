@@ -11,6 +11,9 @@ set smartindent
 
 filetype plugin indent on
 
+" Cross-platform oddities
+syntax on
+
 " Fix Alt key in gnome-terminal
 let c='a'
 while c <= 'z'
