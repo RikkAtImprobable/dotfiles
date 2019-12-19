@@ -1,0 +1,11 @@
+# func_wopen
+# Calls xdg-open on something
+
+wopen() {
+
+    if [[ $# -eq 0 ]] ; then
+        echo 'USAGE: `wopen foo` opens a file in the OS-set application'
+        return 0
+    fi
+    xdg-open $1
+}
